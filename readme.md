@@ -1,6 +1,6 @@
 # AMPForge2
 
-A transformer-based model for generating novel antimicrobial peptides (AMPs) with predicted minimum inhibitory concentration (MIC) values.
+A transformer-based model for generating novel antimicrobial peptides (AMPs) with predicted minimum inhibitory concentration (MIC) values: An implementation based on AMPCLGPT.
 
 <img width="933" height="707" alt="image" src="https://github.com/user-attachments/assets/4ef8eb93-038e-4832-a4ff-a0aeca786800" />
 
