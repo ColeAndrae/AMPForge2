@@ -4,6 +4,8 @@ A transformer-based model for generating novel antimicrobial peptides (AMPs) wit
 
 <img width="933" height="707" alt="image" src="https://github.com/user-attachments/assets/4ef8eb93-038e-4832-a4ff-a0aeca786800" />
 
+**Figure 1:** The overall framework of AMPCLGPT. Reproduced from Hu, K., Xiao, Y., Liu, X., & Ma, S. (2025). Harnessing Generative Pre-trained Transformer for Antimicrobial Peptide Generation and MIC Prediction with Contrastive Learning. *bioRxiv preprint*. https://doi.org/10.1101/2025.03.07.642021. Licensed under CC-BY 4.0.
+
 ## Overview
 
 AMPForge2 is a deep learning framework that combines autoregressive language modeling, contrastive learning, and regression to generate novel antimicrobial peptides. The model is trained on three types of data:
