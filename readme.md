@@ -2,9 +2,9 @@
 
 A transformer-based model for generating novel antimicrobial peptides (AMPs) with predicted minimum inhibitory concentration (MIC) values: An implementation based on AMPCLGPT.
 
-<img width="933" height="707" alt="image" src="https://github.com/user-attachments/assets/4ef8eb93-038e-4832-a4ff-a0aeca786800" />
+![AMPCLGPT: a GPT pretrained on PeptideAtlas and finetuned with contrastive learning for AMP generation and MIC prediction](ampclgpt_diagram.png)
 
-**Figure 1:** The overall framework of AMPCLGPT. Reproduced from Hu, K., Xiao, Y., Liu, X., & Ma, S. (2025). Harnessing Generative Pre-trained Transformer for Antimicrobial Peptide Generation and MIC Prediction with Contrastive Learning. *bioRxiv preprint*. https://doi.org/10.1101/2025.03.07.642021. Licensed under CC-BY 4.0.
+**Figure 1:** The overall framework of AMPCLGPT. Adapted from Hu, K., Xiao, Y., Liu, X., & Ma, S. (2025). Harnessing Generative Pre-trained Transformer for Antimicrobial Peptide Generation and MIC Prediction with Contrastive Learning. *bioRxiv preprint*. https://doi.org/10.1101/2025.03.07.642021. Licensed under CC-BY 4.0.
 
 ## Overview
 
