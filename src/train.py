@@ -160,6 +160,7 @@ while index < n_peptides:
 
     index += 1
 
-    print(f'{index}.\nSequence: {''.join(decode(display_sequence[1:-1]))}')
+    sequence = ''.join(decode(display_sequence[1:-1]))
+    print(f'{index}.\nSequence: {sequence}')
 
     print(f'MIC value: {MIC_prediction} ug/ml\n')

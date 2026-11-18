@@ -1,6 +1,7 @@
 # Import Statments:
 import torch
 import pandas as pd
+from pathlib import Path
 
 # Adding Device Management:
 if torch.backends.mps.is_available():
@@ -15,6 +16,9 @@ else:
 
 # Parameters
 max_len = 27
+
+# Data Files (data/main_data, wherever the script is run from):
+DATA_DIR = Path(__file__).resolve().parent.parent / 'data' / 'main_data'
 
 # Creating Vocabulary for Amino Acids + Special Tokens:
 amino_acids = ['<CLS>',
@@ -51,7 +55,7 @@ decode = lambda l: [itoaa[i] for i in l]
 
 def load_general_peptides():
     # Curating General Peptide Data from PeptideAtlas:
-    with open('Generalized_Peptide_Data.txt', 'r') as f:
+    with open(DATA_DIR / 'Generalized_Peptide_Data.txt', 'r') as f:
         general_peptides = f.read().splitlines()
 
     print(f'{len(general_peptides)} general peptides loaded | Sample peptide: {general_peptides[5]}')
@@ -94,11 +98,11 @@ def load_general_peptides():
 
 def load_amp_data():
     # Curating AMP Data from dbAMP:
-    with open('AMP_Data.txt', 'r') as f:
+    with open(DATA_DIR / 'AMP_Data.txt', 'r') as f:
         amps = f.read().splitlines()
 
     # Curating non-AMP Data from UniProt:
-    with open('non-AMP_Data.txt', 'r') as f:
+    with open(DATA_DIR / 'non-AMP_Data.txt', 'r') as f:
         non_amps = f.read().splitlines()
 
     print(f'{len(amps)} AMPs loaded | Sample AMP: {amps[5]}')
@@ -172,7 +176,7 @@ def load_amp_data():
 
 def load_mic_data():
     # Curating MIC Value Data:
-    df = pd.read_csv('MIC_Value_Data.csv')
+    df = pd.read_csv(DATA_DIR / 'MIC_Value_Data.csv')
 
     mic_sequence_data = []
     mic_value_data = df['value'].values

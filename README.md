@@ -40,16 +40,17 @@ AMPForge2 is a deep learning framework that combines autoregressive language mod
 
 ## Quick Start
 
-1. Prepare your data files:
-   - `Generalized_Peptide_Data.txt`: General peptide sequences
-   - `AMP_Data.txt`: Known antimicrobial peptides
-   - `non-AMP_Data.txt`: Non-antimicrobial peptide sequences
-   - `MIC_Value_Data.csv`: Peptide sequences with MIC values
+1. Install the requirements:
+```bash
+pip install -r requirements.txt
+```
 
 2. Run the training pipeline:
 ```bash
-python train.py
+python src/train.py
 ```
+
+The four data files it reads are already in `data/main_data`.
 
 The model will automatically:
 - Load and preprocess all datasets
